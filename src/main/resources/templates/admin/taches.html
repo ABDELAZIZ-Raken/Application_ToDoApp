@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: base(~{::content}, 'TodoApp-Taches', 'taches')}">
+<div th:fragment="content">
+    <h1>Page de gestion des tâches</h1>
+    <p>Cette page listera des tâches des utilisateurs</p>
+</div>
 </html>
